@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&family=Nunito:wght@500&display=swap');
+
+
+.small-gap-remover {
+    margin-top: -20px;
+}
+
+.small-break {
+    margin-top: 8px;
+}
+
+.medium-break {
+    margin-top: 16px;
+}
+
+.big-input-numeral {
+    font-size:23px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+
+    border-radius: 4px;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.big-input-text-block {
+    font-size:23px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+
+    border-radius: 4px;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.big-input-text-hand {
+    font-size:40px;
+    font-family: 'Bilbo Swash Caps', cursive;
+    text-align: center;
+    font-weight: 600;
+
+    border-style: none;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    margin-right: 2px;
+}
+
+.input-title-large {
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+    font-weight:600;
+    font-size: 32;
+
+    margin-left: 4px;
+
+    text-shadow:
+        1px 1px 0.2px #000,
+        0.75px 0.75px 0.2px #000,
+        0.5px 0.5px 0.2px #000,
+        0.25px 0.25px 0.2px #000,
+
+      -1px -1px 0.2px #000,
+      -0.5px -0.5px 0.2px #000,
+      -0.75px -0.75px 0.2px #000,
+      -0.25px -0.25px 0.2px #000,
+
+       1px -1px 0.2px #000,
+       0.75px -0.75px 0.2px #000,
+       0.5px -0.5px 0.2px #000,
+       0.25px -0.25px 0.2px #000,
+
+       -1px 1px 0.2px #000,
+       -0.75px 0.75px 0.2px #000,
+       -0.5px 0.5px 0.2px #000,
+       -0.25px 0.25px 0.2px #000,
+
+        0px 1px 0.2px #000,
+        0px 0.75px 0.2px #000,
+        0px 0.5px 0.2px #000,
+        0px 0.25px 0.2px #000,
+
+        0px -1px 0.2px #000,
+        0px -0.5px 0.2px #000,
+        0px -0.75px 0.2px #000,
+        0px -0.25px 0.2px #000,
+
+        1px 0px 0.2px #000,
+        0.75px 0px 0.2px #000,
+        0.5px 0px 0.2px #000,
+        0.25px 0px 0.2px #000,
+
+        -1px 0px 0.2px #000,
+        -0.75px 0px 0.2px #000,
+        -0.5px 0px 0.2px #000,
+        -0.25px 0px 0.2px #000;
+}
+
+.sheet-background {
+    background-image: url('./character-background-small.png');
+    height: 1585;
+    width: 1080;
+}
