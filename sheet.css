@@ -146,26 +146,20 @@
         -0.25px 0px 0.2px #000;
 }
 
-.scrollable {
-    overflow-y: scroll;
-    height: 1585px;
-    width: 1096px;
-}
-
 .journal-sheet-background {
     background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/journal-background-small.png');
     background-repeat: no-repeat;
-    height: 1585px;
-    width: 1080px;
-    background-size: 1080px 1585px;
+    height: 1409px;
+    width: 960px;
+    background-size: 960px 1409px;
 }
 
 .character-sheet-background {
     background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/character-background-small.png');
     background-repeat: no-repeat;
-    height: 1585px;
-    width: 1080px;
-    background-size: 1080px 1585px;
+    height: 1409px;
+    width: 960px;
+    background-size: 960px 1409px;
 }
 
 /*Configure the tab buttons*/
