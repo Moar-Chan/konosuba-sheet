@@ -32,7 +32,7 @@
 }
 
 .big-input-numeral {
-    font-size:31px;
+    font-size:30px;
     font-family: 'Courier New', monospace;
     text-align: center;
 
@@ -44,8 +44,13 @@
     margin-right: 3px;
 }
 
+.drop-down-selector {
+    font-size: 16px;
+    height: 36px;
+}
+
 .medium-input-text-block {
-    font-size:24px;
+    font-size:23px;
     font-family: 'Courier New', monospace;
     text-align: center;
 
@@ -58,7 +63,7 @@
 }
 
 .big-input-text-block {
-    font-size:28px;
+    font-size:27px;
     font-family: 'Courier New', monospace;
     text-align: center;
 
@@ -72,7 +77,7 @@
 }
 
 .big-input-text-hand {
-    font-size:40px;
+    font-size:39px;
     font-family: 'Bilbo Swash Caps', cursive;
     text-align: center;
     font-weight: 600;
@@ -89,18 +94,26 @@
     font-family: 'Nunito', sans-serif;
     color: #313131;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
 
-    height: 32px;
 
     margin-left: 6px;
+}
+
+.input-title-medium {
+    font-family: 'Nunito', sans-serif;
+    color: #131313;
+    font-weight: 400;
+    font-size: 26px;
+
+    text-align: center;
 }
 
 .input-title-large {
     font-family: 'Nunito', sans-serif;
     color: whitesmoke;
     font-weight:600;
-    font-size: 32px;
+    font-size: 31px;
 
     margin-left: 4px;
 
