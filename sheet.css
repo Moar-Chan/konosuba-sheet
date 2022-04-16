@@ -89,7 +89,7 @@
     font-family: 'Nunito', sans-serif;
     color: #313131;
     font-weight: 400;
-    font-size: 23px;
+    font-size: 22px;
 
     height: 32px;
 
@@ -152,10 +152,32 @@
     width: 1096px;
 }
 
-.sheet-background {
+.journal-sheet-background {
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/journal-background-small.png');
+    background-repeat: no-repeat;
+    height: 1585px;
+    width: 1080px;
+    background-size: 1080px 1585px;
+}
+
+.character-sheet-background {
     background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/character-background-small.png');
     background-repeat: no-repeat;
     height: 1585px;
     width: 1080px;
     background-size: 1080px 1585px;
+}
+
+/*Configure the tab buttons*/
+.charsheet .sheet-character,
+.charsheet .sheet-config,
+.charsheet .sheet-journal {
+    display: none;
+}
+
+/* show the selected tab */
+.charsheet .sheet-tabstoggle[value="character"] ~ div.sheet-character,
+.charsheet .sheet-tabstoggle[value="configuration"] ~ div.sheet-config,
+.charsheet .sheet-tabstoggle[value="journal"] ~ div.sheet-journal {
+    display: block;
 }
