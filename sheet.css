@@ -251,3 +251,13 @@
 .container {
     column-gap: 0;
 }
+
+.sheet-block-a,
+.charsheet .sheet-block-switch:checked ~ .sheet-block-b {
+  display: block;
+}
+
+.charsheet .sheet-block-b,
+.charsheet .sheet-block-switch:checked ~ .sheet-block-a {
+  display: none;
+}
