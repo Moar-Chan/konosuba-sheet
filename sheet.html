@@ -17,35 +17,35 @@
                     <input type="text" name="attr_character_name" class="big-input-text-hand" style="width: 390px;"/>
                 </div>
         
-                <div id="player-name" style="position: absolute; top: 406px; left: 44px;">
+                <div id="character-name" style="position: absolute; top: 406px; left: 44px;">
                     <em class="input-title-large">Player name</em>
                     <br>
                     <div class="mini-gap-remover"/>
-                    <input type="text" name="attr_player_name" class="big-input-text-hand" style="width: 390px;"/>
+                    <input type="text" name="attr_character_name" class="big-input-text-hand" style="width: 390px;"/>
                 </div>
         
-                <div id="player-age" style="position: absolute; top: 355px; left: 443px;">
+                <div id="character-age" style="position: absolute; top: 355px; left: 443px;">
                     <em class="input-title-small">Age</em>
                     <br>
                     <div class="small-gap-remover"/>
                     <input type="text" name="attr_age" class="big-input-numeral" style="margin-left: 58px; width: 96px;"/>
                 </div>
                 
-                <div id="player-gender" style="position: absolute; top: 406px; left: 443px;">
+                <div id="character-gender" style="position: absolute; top: 406px; left: 443px;">
                     <em class="input-title-small">Gender</em>
                     <br>
                     <div class="small-gap-remover"/>
                     <input type="text" name="attr_gender" class="medium-input-text-block" style="margin-left: 6px; margin-top: 20px; width: 154px; height: 26px">
                 </div>
                 
-                <div id="player-xp-used" style="position: absolute; top: 456px; left: 443px;">
+                <div id="character-xp-used" style="position: absolute; top: 456px; left: 443px;">
                     <em class="input-title-small">Used Experience</em>
                     <br>
                     <div class="small-gap-remover"/>
                     <input type="text" name="attr_xp_used" class="medium-input-text-block" style="margin-left: 6px; margin-top: 20px; width: 154px; height: 26px;">
                 </div>
         
-                <div id="player-race" style="position: absolute; top: 532px; left: 44px;">
+                <div id="character-race" style="position: absolute; top: 532px; left: 44px;">
                     <em class="input-title-large">Race</em>
                     <br>
                     <div class="mini-gap-remover"/>
@@ -56,7 +56,7 @@
                     </select>
                 </div>
         
-                <div id="player-class" style="position: absolute; top: 614px; left: 44px;">
+                <div id="character-class" style="position: absolute; top: 614px; left: 44px;">
                     <em class="input-title-large">Class</em>
                     <br>
                     <div class="mini-gap-remover"/>
@@ -86,7 +86,7 @@
                     </select>
                 </div>
         
-                <div id="player-lvl" style="position: absolute; top: 545px; left: 500px;">
+                <div id="character-lvl" style="position: absolute; top: 545px; left: 500px;">
                     <em class="input-title-medium" style="width: 100%;display: inline-block;">Level</em>
                     <br>
                     <input type="text" name="attr_lvl" class="big-input-numeral" style="margin-top: 20px; width: 96px;">
@@ -182,6 +182,12 @@
                     <em class="stat-title-medium" style="width: 99px;display: inline-block;/*! margin-left: 72px; */height: 58px;">Check<br>(# of dice)</em>
                 </span>
             </div>
+
+            <div id="section 3">
+                <div id="character-apperance" style="position: absolute; top: 309px; left: 44px;">
+                    <img name="attr_character_avatar">
+                </div>
+            </div>
         </div>
         
         <div class="journal-sheet-background sheet-journal">
@@ -203,13 +209,13 @@
                 <tr>
                     <th style="border: 2px solid darkslategrey; border-collapse: collapse;">Portrait: </th>
                     <th style="border: 2px solid darkslategrey; border-collapse: collapse;">
-                        <input type="text" name="attr_player_face" placeholder="Img url" size="26" onkeydown="search_portrait(this)" style="font-size:14px;">
+                        <input type="text" name="attr_character_avatar" placeholder="Img url" size="26" style="font-size:14px;">
                     </th>
                 </tr>
                 <tr>
                     <th style="border: 2px solid darkslategrey; border-collapse: collapse;">Token: </th>
                     <th style="border: 2px solid darkslategrey; border-collapse: collapse;">
-                        <input type="text" name="attr_player_token" placeholder="Img url" size="26" onkeydown="search_portrait(this)" style="font-size:14px;">
+                        <input type="text" name="attr_character_token" placeholder="Img url" size="26" style="font-size:14px;">
                     </th>
                 </tr>
                 

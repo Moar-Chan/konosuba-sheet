@@ -221,17 +221,17 @@
 .journal-sheet-background {
     background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/journal-background-small.png');
     background-repeat: no-repeat;
-    height: 1409px;
-    width: 960px;
-    background-size: 960px 1409px;
+    height: 1320px;
+    width: 900px;
+    background-size: 900px 1320px;
 }
 
 .character-sheet-background {
     background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/character-background-small.png');
     background-repeat: no-repeat;
-    height: 1409px;
-    width: 960px;
-    background-size: 960px 1409px;
+    height: 1320px;
+    width: 900px;
+    background-size: 900px 1320px;
 }
 
 /*Configure the tab buttons*/
@@ -260,4 +260,9 @@
 .charsheet .sheet-block-b,
 .charsheet .sheet-block-switch:checked ~ .sheet-block-a {
   display: none;
+}
+
+.portrait-img{
+    width: 100px;
+    height: 100px;
 }
