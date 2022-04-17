@@ -167,6 +167,57 @@
 	text-align: center;
 }
 
+.attribute-medium-large {
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+    font-weight:600;
+    font-size: 27px;
+
+    text-align: center;
+    margin-left: 4px;
+
+    text-shadow:
+        1px 1px 0.2px #000,
+        0.75px 0.75px 0.2px #000,
+        0.5px 0.5px 0.2px #000,
+        0.25px 0.25px 0.2px #000,
+
+      -1px -1px 0.2px #000,
+      -0.5px -0.5px 0.2px #000,
+      -0.75px -0.75px 0.2px #000,
+      -0.25px -0.25px 0.2px #000,
+
+       1px -1px 0.2px #000,
+       0.75px -0.75px 0.2px #000,
+       0.5px -0.5px 0.2px #000,
+       0.25px -0.25px 0.2px #000,
+
+       -1px 1px 0.2px #000,
+       -0.75px 0.75px 0.2px #000,
+       -0.5px 0.5px 0.2px #000,
+       -0.25px 0.25px 0.2px #000,
+
+        0px 1px 0.2px #000,
+        0px 0.75px 0.2px #000,
+        0px 0.5px 0.2px #000,
+        0px 0.25px 0.2px #000,
+
+        0px -1px 0.2px #000,
+        0px -0.5px 0.2px #000,
+        0px -0.75px 0.2px #000,
+        0px -0.25px 0.2px #000,
+
+        1px 0px 0.2px #000,
+        0.75px 0px 0.2px #000,
+        0.5px 0px 0.2px #000,
+        0.25px 0px 0.2px #000,
+
+        -1px 0px 0.2px #000,
+        -0.75px 0px 0.2px #000,
+        -0.5px 0px 0.2px #000,
+        -0.25px 0px 0.2px #000;
+}
+
 .journal-sheet-background {
     background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/journal-background-small.png');
     background-repeat: no-repeat;
