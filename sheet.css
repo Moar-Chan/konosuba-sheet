@@ -15,6 +15,11 @@
     margin-top: -20px;
 }
 
+.medium-gap-remover {
+    height: -25px;
+    margin-top: -25px;
+}
+
 .tiny-break {
     height: 2px;
 }
@@ -32,7 +37,7 @@
 }
 
 .big-input-numeral {
-    font-size:30px;
+    font-size:27px;
     font-family: 'Courier New', monospace;
     text-align: center;
 
@@ -42,6 +47,8 @@
     margin-bottom: 2px;
     margin-left: 3px;
     margin-right: 3px;
+
+    background: transparent;
 }
 
 .drop-down-selector {
@@ -60,6 +67,8 @@
     margin-bottom: 2px;
     margin-left: 3px;
     margin-right: 3px;
+
+    background: transparent;
 }
 
 .big-input-text-block {
@@ -74,6 +83,8 @@
     margin-bottom: 2px;
     margin-left: 3px;
     margin-right: 3px;
+
+    background: transparent;
 }
 
 .big-input-text-hand {
@@ -88,6 +99,8 @@
     margin-bottom: 2px;
     margin-left: 4px;
     margin-right: 2px;
+
+    background: transparent;
 }
 
 .input-title-small {
@@ -113,7 +126,7 @@
     font-family: 'Nunito', sans-serif;
     color: whitesmoke;
     font-weight:600;
-    font-size: 31px;
+    font-size: 30px;
 
     margin-left: 4px;
 
@@ -174,7 +187,6 @@
     font-size: 27px;
 
     text-align: center;
-    margin-left: 4px;
 
     text-shadow:
         1px 1px 0.2px #000,
@@ -263,6 +275,14 @@
 }
 
 .portrait-img{
-    width: 100px;
-    height: 100px;
+    width: 319px;
+    height: 323px;
+}
+
+.stat-column {
+    top: 677px;
+}
+
+.column-space {
+    margin-top: 16px;
 }

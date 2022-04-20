@@ -10,42 +10,42 @@
         
         <div class="character-sheet-background sheet-character">
             <div id="section 1">
-                <div id="character-name" style="position: absolute; top: 309px; left: 44px;">
+                <div id="character-name" style="position: absolute; top: 293px; left: 44px;">
                     <em class="input-title-large">Character name</em>
                     <br>
                     <div class="mini-gap-remover"/>
-                    <input type="text" name="attr_character_name" class="big-input-text-hand" style="width: 390px;"/>
+                    <input type="text" name="attr_character_name" class="big-input-text-hand" style="width: 365px;"/>
                 </div>
         
-                <div id="character-name" style="position: absolute; top: 406px; left: 44px;">
+                <div id="player-name" style="position: absolute; top: 385px; left: 44px;">
                     <em class="input-title-large">Player name</em>
                     <br>
                     <div class="mini-gap-remover"/>
-                    <input type="text" name="attr_character_name" class="big-input-text-hand" style="width: 390px;"/>
+                    <input type="text" name="attr_player_name" class="big-input-text-hand" style="width: 365px;"/>
                 </div>
         
-                <div id="character-age" style="position: absolute; top: 355px; left: 443px;">
+                <div id="character-age" style="position: absolute; top: 339px; left: 418px;">
                     <em class="input-title-small">Age</em>
                     <br>
                     <div class="small-gap-remover"/>
-                    <input type="text" name="attr_age" class="big-input-numeral" style="margin-left: 58px; width: 96px;"/>
+                    <input type="text" name="attr_age" class="big-input-numeral" style="margin-left: 58px; width: 90px;">
                 </div>
                 
-                <div id="character-gender" style="position: absolute; top: 406px; left: 443px;">
+                <div id="character-gender" style="position: absolute; top: 388px; left: 418px;">
                     <em class="input-title-small">Gender</em>
                     <br>
-                    <div class="small-gap-remover"/>
-                    <input type="text" name="attr_gender" class="medium-input-text-block" style="margin-left: 6px; margin-top: 20px; width: 154px; height: 26px">
+                    <div class="medium-gap-remover"/>
+                    <input type="text" name="attr_gender" class="medium-input-text-block" style="margin-left: 6px; margin-top: 20px; width: 144px; height: 26px">
                 </div>
                 
-                <div id="character-xp-used" style="position: absolute; top: 456px; left: 443px;">
+                <div id="character-xp-used" style="position: absolute; top: 433px; left: 418px;">
                     <em class="input-title-small">Used Experience</em>
                     <br>
-                    <div class="small-gap-remover"/>
-                    <input type="text" name="attr_xp_used" class="medium-input-text-block" style="margin-left: 6px; margin-top: 20px; width: 154px; height: 26px;">
+                    <div class="medium-gap-remover"></div>
+                    <input type="text" name="attr_xp_used" class="medium-input-text-block" style="margin-left: 6px; margin-top: 22px; width: 144px; height: 25px;">
                 </div>
         
-                <div id="character-race" style="position: absolute; top: 532px; left: 44px;">
+                <div id="character-race" style="position: absolute; top: 504px; left: 44px;">
                     <em class="input-title-large">Race</em>
                     <br>
                     <div class="mini-gap-remover"/>
@@ -56,7 +56,7 @@
                     </select>
                 </div>
         
-                <div id="character-class" style="position: absolute; top: 614px; left: 44px;">
+                <div id="character-class" style="position: absolute; top: 580px; left: 44px;">
                     <em class="input-title-large">Class</em>
                     <br>
                     <div class="mini-gap-remover"/>
@@ -86,28 +86,32 @@
                     </select>
                 </div>
         
-                <div id="character-lvl" style="position: absolute; top: 545px; left: 500px;">
+                <div id="character-lvl" style="position: absolute; top: 510px; left: 465px;">
                     <em class="input-title-medium" style="width: 100%;display: inline-block;">Level</em>
                     <br>
-                    <input type="text" name="attr_lvl" class="big-input-numeral" style="margin-top: 20px; width: 96px;">
+                    <input type="text" name="attr_lvl" class="big-input-numeral" style="margin-top: 20px; width: 100px; border-style: none;">
                 </div>
             </div>
         
             <div id="stats">
-                <span id="column 0" style="position: absolute; top: 720px; left: 45px;">
-                    <em class="stat-title-medium" style="width: 68px;display: block;height: 58px;"> </em>
+                <span id="column 0" class="stat-column" style="position: absolute; left: 45px;">
+                    <div>
+                        <em class="stat-title-medium" style="width: 68px;display: block;height: 58px;"> </em>
+                    </div>
         
                     <em class="attribute-medium-large" style="width: 68px;display: block;margin-top: 14px;">Str</em>
-                    <em class="attribute-medium-large" style="width: 68px;display: block;margin-top: 19px;">Dex</em>
-                    <em class="attribute-medium-large" style="width: 68px;display: block;margin-top: 19px;">Agi</em>
-                    <em class="attribute-medium-large" style="width: 68px;display: block;margin-top: 19px;">Int</em>
-                    <em class="attribute-medium-large" style="width: 68px;display: block;margin-top: 19px;">Per</em>
-                    <em class="attribute-medium-large" style="width: 68px;display: block;margin-top: 19px;">Min</em>
-                    <em class="attribute-medium-large" style="width: 68px;display: block;margin-top: 19px;">Luc</em>
+                    <em class="attribute-medium-large column-space" style="width: 68px;display: block;">Dex</em>
+                    <em class="attribute-medium-large column-space" style="width: 68px;display: block;">Agi</em>
+                    <em class="attribute-medium-large column-space" style="width: 68px;display: block;">Int</em>
+                    <em class="attribute-medium-large column-space" style="width: 68px;display: block;">Per</em>
+                    <em class="attribute-medium-large column-space" style="width: 68px;display: block;">Min</em>
+                    <em class="attribute-medium-large column-space" style="width: 68px;display: block;">Luc</em>
                 </span>
             
-                <span id="column 1" style="position: absolute; top: 720px; left: 115px;">
-                    <em class="stat-title-medium" style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;">Base</em>
+                <span id="column 1" class="stat-column" style="position: absolute; left: 107px;">
+                    <div style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                        <em class="stat-title-medium" style="font-size: 18px;display: block;margin-top: 16px;">Base</em>
+                    </div>
                     
                     <input type="text" name="attr_Strength_Base" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
                     <input type="text" name="attr_Dexterity_Base" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
@@ -118,8 +122,10 @@
                     <input type="text" name="attr_Luck_Base" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
                 </span>
             
-                <span id="column 2" style="position: absolute; top: 720px; left: 185px;vertical-align: middle;">
-                    <em class="stat-title-medium" style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;/*! vertical-align: middle; */">Ability<br>Score</em>
+                <span id="column 2" class="stat-column" style="position: absolute; left: 173px; vertical-align: middle;">
+                    <div style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;margin-top: 10px;">Ability<br>Score</em>
+                    </div>
                     
                     <input type="text" name="attr_Strength_Ability_score" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
                     <input type="text" name="attr_Dexterity_Ability_score" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
@@ -130,8 +136,10 @@
                     <input type="text" name="attr_Luck_Ability_score" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
                 </span>
             
-                <span id="column 3" style="position: absolute; top: 720px; left: 255px;">
-                    <em class="stat-title-medium" style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;">Ability<br>Bonus</em>
+                <span id="column 3" class="stat-column" style="position: absolute; left: 239px;">
+                    <div style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;margin-top: 10px;">Ability<br>Bonus</em>
+                    </div>
                     
                     <input type="text" name="attr_Strength_Ability_Bonus" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
                     <input type="text" name="attr_Dexterity_Ability_Bonus" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
@@ -142,8 +150,10 @@
                     <input type="text" name="attr_Luck_Ability_Bonus" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
                 </span>
             
-                <span id="column 4" style="position: absolute; top: 720px; left: 321px;">
-                    <em class="stat-title-medium" style="width: 58px;display: inline-block;/*! margin-left: 72px; */height: 58px;">Class</em>
+                <span id="column 4" class="stat-column" style="position: absolute; left: 303px;">
+                    <div style="width: 58px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;margin-top: 18px;">Class</em>
+                    </div>
         
                     <input type="text" name="attr_Strength_Class" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
                     <input type="text" name="attr_Dexterity_Class" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
@@ -154,8 +164,10 @@
                     <input type="text" name="attr_Luck_Class" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
                 </span>
             
-                <span id="column 5" style="position: absolute; top: 720px; left: 379px;">
-                    <em class="stat-title-medium" style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;">Mod</em>
+                <span id="column 5" class="stat-column" style="position: absolute; left: 356px;">
+                    <div style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                        <em class="stat-title-medium" style="font-size: 18px;display: block;margin-top: 18px;">Mod</em>
+                    </div>
         
                     <input type="text" name="attr_Strength_Mod" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
                     <input type="text" name="attr_Dexterity_Mod" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
@@ -167,8 +179,10 @@
                 </span>
                 </span>
             
-                <span id="column 6" style="position: absolute; top: 720px; left: 448px;">
-                    <em class="stat-title-medium" style="width: 56px;display: inline-block;/*! margin-left: 72px; */height: 58px;">Skill<br>etc.</em>
+                <span id="column 6" class="stat-column" style="position: absolute; left: 420px;">
+                    <div style="width: 56px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;margin-top: 10px;">Skill<br>etc.</em>
+                    </div>
         
                     <input type="text" name="attr_Strength_Skill" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
                     <input type="text" name="attr_Dexterity_Skill" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
@@ -178,15 +192,45 @@
                     <input type="text" name="attr_Mind_Skill" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
                     <input type="text" name="attr_Luck_Skill" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
                 </span>
-                <span id="column 7" style="position: absolute; top: 720px; left: 505px;">
-                    <em class="stat-title-medium" style="width: 99px;display: inline-block;/*! margin-left: 72px; */height: 58px;">Check<br>(# of dice)</em>
+                <span id="column 7" class="stat-column" style="position: absolute; left: 475px;">
+                    <div style="width: 96px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;margin-top: 10px;">Check<br>(# of dice)</em>
+                    </div>
+
+                    <input type="text" name="attr_Strength_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Dexterity_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Agility_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Inteligence_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Perception_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Mind_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Luck_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
                 </span>
             </div>
 
             <div id="section 3">
-                <div id="character-apperance" style="position: absolute; top: 309px; left: 44px;">
-                    <img name="attr_character_avatar">
+                <div id="character-apperance" style="position: absolute; top: 149px; left: 601px;">
+                    <img class="portrait-img" name="attr_character_avatar" src="https://s3.amazonaws.com/files.d20.io/images/281430924/ddcMrY-HpiEKA6d0imENPA/med.png?1650462991">
                 </div>
+
+                <div id="character-hp" style="position: absolute; top: 615px; left: 595px;">
+                    <em class="input-title-medium" style="width: 100%;display: inline-block;">HP</em>
+                    <br>
+                    <input type="text" name="attr_hp" class="big-input-numeral" style="margin-top: 0px; width: 100px; border-style: none;">
+                    <hr style="margin: 0px;">
+                    <input type="text" class="big-input-numeral" style="margin-top: 0px; width: 100px; border-style: none;" name="attr_hp_max">
+                </div>
+
+                <div id="character-mp" style="position: absolute; top: 615px; left: 705px;">
+                    <em class="input-title-medium" style="width: 100%;display: inline-block;">MP</em>
+                    <br>
+                    <input type="text" class="big-input-numeral" style="margin-top: 0px; width: 100px; border-style: none;" name="attr_mp">
+                    <hr style="margin: 0px;">
+                    <input type="text" class="big-input-numeral" style="margin-top: 0px; width: 100px; border-style: none;" name="attr_mp_max">
+                </div>
+            </div>
+
+            <div id="equipment">
+
             </div>
         </div>
         
