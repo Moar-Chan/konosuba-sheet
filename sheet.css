@@ -103,6 +103,16 @@
     background: transparent;
 }
 
+.input-title-tiny {
+    font-family: 'Nunito', sans-serif;
+    color: #313131;
+    font-weight: 400;
+    font-size: 16px;
+
+
+    margin-left: 6px;
+}
+
 .input-title-small {
     font-family: 'Nunito', sans-serif;
     color: #313131;
