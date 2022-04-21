@@ -1,5 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&family=Nunito:wght@500&display=swap');
 
+
+.journal-sheet-background {
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/journal-background-small.png');
+    background-repeat: no-repeat;
+    height: 1320px;
+    width: 900px;
+    background-size: 900px 1320px;
+}
+
+.character-sheet-background {
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/character-background-small.png');
+    background-repeat: no-repeat;
+    height: 1320px;
+    width: 900px;
+    background-size: 900px 1320px;
+}
+
+/*Configure the tab buttons*/
+.charsheet .sheet-character,
+.charsheet .sheet-config,
+.charsheet .sheet-journal {
+    display: none;
+}
+
+/* show the selected tab */
+.charsheet .sheet-tabstoggle[value="character"] ~ div.sheet-character,
+.charsheet .sheet-tabstoggle[value="configuration"] ~ div.sheet-config,
+.charsheet .sheet-tabstoggle[value="journal"] ~ div.sheet-journal {
+    display: block;
+}
+
+.container {
+    column-gap: 0;
+}
+
+.sheet-block-a,
+.charsheet .sheet-block-switch:checked ~ .sheet-block-b {
+  display: block;
+}
+
+.charsheet .sheet-block-b,
+.charsheet .sheet-block-switch:checked ~ .sheet-block-a {
+  display: none;
+}
+
 .mini-gap-remover {
     height: -6px;
     margin-top: -6px;
@@ -240,49 +285,6 @@
         -0.25px 0px 0.2px #000;
 }
 
-.journal-sheet-background {
-    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/journal-background-small.png');
-    background-repeat: no-repeat;
-    height: 1320px;
-    width: 900px;
-    background-size: 900px 1320px;
-}
-
-.character-sheet-background {
-    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/character-background-small.png');
-    background-repeat: no-repeat;
-    height: 1320px;
-    width: 900px;
-    background-size: 900px 1320px;
-}
-
-/*Configure the tab buttons*/
-.charsheet .sheet-character,
-.charsheet .sheet-config,
-.charsheet .sheet-journal {
-    display: none;
-}
-
-/* show the selected tab */
-.charsheet .sheet-tabstoggle[value="character"] ~ div.sheet-character,
-.charsheet .sheet-tabstoggle[value="configuration"] ~ div.sheet-config,
-.charsheet .sheet-tabstoggle[value="journal"] ~ div.sheet-journal {
-    display: block;
-}
-
-.container {
-    column-gap: 0;
-}
-
-.sheet-block-a,
-.charsheet .sheet-block-switch:checked ~ .sheet-block-b {
-  display: block;
-}
-
-.charsheet .sheet-block-b,
-.charsheet .sheet-block-switch:checked ~ .sheet-block-a {
-  display: none;
-}
 
 .portrait-img{
     width: 319px;
@@ -295,4 +297,8 @@
 
 .column-space {
     margin-top: 16px;
+}
+
+.mob-input {
+    font-size:14px;
 }
