@@ -2,24 +2,37 @@
 
 
 .journal-sheet-background {
-    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V1/journal-background-small.png');
-    background-repeat: no-repeat;
-    height: 1320px;
-    width: 900px;
-    background-size: 900px 1320px;
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V2/journal-background-small.png');
 }
 
 .character-sheet-background {
-    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V1/character-background-small.png');
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V2/character-background-small.png');
+}
+
+.equipment-sheet-background {
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V2/equipment-background-small.png');
+}
+
+.skills-sheet-background {
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V2/skills-background-small.png');
+}
+
+.default-sheet-background {
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V2/background-small.png');
+}
+
+.sheet-background {
     background-repeat: no-repeat;
-    height: 1320px;
-    width: 900px;
-    background-size: 900px 1320px;
+    height: 824px;
+    width: 888px;
+    background-size: 888px 824px;
 }
 
 /*Configure the tab buttons*/
 .charsheet .sheet-character,
 .charsheet .sheet-config,
+.charsheet .sheet-equipment,
+.charsheet .sheet-skills,
 .charsheet .sheet-journal {
     display: none;
 }
@@ -27,7 +40,9 @@
 /* show the selected tab */
 .charsheet .sheet-tabstoggle[value="character"] ~ div.sheet-character,
 .charsheet .sheet-tabstoggle[value="configuration"] ~ div.sheet-config,
-.charsheet .sheet-tabstoggle[value="journal"] ~ div.sheet-journal {
+.charsheet .sheet-tabstoggle[value="journal"] ~ div.sheet-journal,
+.charsheet .sheet-tabstoggle[value="equipment"] ~ div.sheet-equipment,
+.charsheet .sheet-tabstoggle[value="skills"] ~ div.sheet-skills {
     display: block;
 }
 
@@ -82,7 +97,7 @@
 }
 
 .big-input-numeral {
-    font-size:26px;
+    font-size:25px;
     font-family: 'Courier New', monospace;
     text-align: center;
 
@@ -102,7 +117,7 @@
 }
 
 .medium-input-text-block {
-    font-size:23px;
+    font-size:22px;
     font-family: 'Courier New', monospace;
     text-align: center;
 
@@ -133,7 +148,7 @@
 }
 
 .big-input-text-hand {
-    font-size:39px;
+    font-size:30px;
     font-family: 'Bilbo Swash Caps', cursive;
     text-align: center;
     font-weight: 600;
@@ -162,7 +177,7 @@
     font-family: 'Nunito', sans-serif;
     color: #313131;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
 
 
     margin-left: 6px;
@@ -181,7 +196,7 @@
     font-family: 'Nunito', sans-serif;
     color: whitesmoke;
     font-weight:600;
-    font-size: 30px;
+    font-size: 26px;
 
     margin-left: 4px;
 
