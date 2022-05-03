@@ -307,12 +307,21 @@
 }
 
 .stat-column {
-    top: 677px;
+    top: 539px;
 }
 
 .column-space {
-    margin-top: 16px;
+    margin-top: 5px;
 }
+
+.ability-box {
+    width: 51px;
+    display: block;
+    border-style: none;
+    margin-left: 9px;
+}
+
+
 
 .mob-input {
     font-size:14px;

@@ -69,6 +69,9 @@
                         <option value="Wizard" data-i18n="Wizard">Wizard</option>
                         <option value="Thief" data-i18n="Thief">Thief</option>
                         <option value="Adventurer" data-i18n="Adventurer">Adventurer</option>
+
+                        <!--Extra-->
+                        <option disabled style="background:gray;font-weight:bold;color:white;">&nbsp;&nbsp;&nbsp;&nbsp; Extra</option>
                         <option value="Archer" data-i18n="Archer">Archer</option>
                         <option value="Elemental_Master" data-i18n="Elemental Master">Elemental Master</option>
                         <option value="Creator" data-i18n="Creator">Creator</option>
@@ -95,12 +98,12 @@
             </div>
 
             <div id="stats">
-                <span id="column 0" class="stat-column" style="position: absolute; left: 45px;">
+                <span id="column 0" class="stat-column" style="position: absolute; left: 32px;">
                     <div>
                         <em class="stat-title-medium" style="width: 68px;display: block;height: 58px;"> </em>
                     </div>
 
-                    <em class="attribute-medium-large" style="width: 68px;display: block;margin-top: 14px;">Str</em>
+                    <em class="attribute-medium-large" style="width: 68px;display: block;">Str</em>
                     <em class="attribute-medium-large column-space" style="width: 68px;display: block;">Dex</em>
                     <em class="attribute-medium-large column-space" style="width: 68px;display: block;">Agi</em>
                     <em class="attribute-medium-large column-space" style="width: 68px;display: block;">Int</em>
@@ -109,102 +112,102 @@
                     <em class="attribute-medium-large column-space" style="width: 68px;display: block;">Luc</em>
                 </span>
 
-                <span id="column 1" class="stat-column" style="position: absolute; left: 107px;">
-                    <div style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                <span id="column 1" class="stat-column" style="position: absolute; left: 97px;">
+                    <div style="width: 68px;display: inline-block;height: 58px;">
                         <em class="stat-title-medium" style="font-size: 18px;display: block;margin-top: 16px;">Base</em>
                     </div>
 
-                    <input type="text" name="attr_Strength_Base" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Dexterity_Base" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Agility_Base" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Inteligence_Base" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Perception_Base" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Mind_Base" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Luck_Base" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Strength_Base" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 5px;">
+                    <input type="text" name="attr_Dexterity_Base" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
+                    <input type="text" name="attr_Agility_Base" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
+                    <input type="text" name="attr_Inteligence_Base" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Perception_Base" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Mind_Base" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Luck_Base" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
                 </span>
 
-                <span id="column 2" class="stat-column" style="position: absolute; left: 173px; vertical-align: middle;">
-                    <div style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                <span id="column 2" class="stat-column" style="position: absolute; left: 163px;">
+                    <div style="width: 68px;display: inline-block;height: 58px;">
                         <em class="stat-title-medium" style="font-size: 16px;display: block;margin-top: 10px;">Ability<br>Score</em>
                     </div>
 
-                    <input type="text" name="attr_Strength_Ability_score" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Dexterity_Ability_score" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Agility_Ability_score" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Inteligence_Ability_score" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Perception_Ability_score" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Mind_Ability_score" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Luck_Ability_score" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Strength_Ability_score" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 5px;">
+                    <input type="text" name="attr_Dexterity_Ability_score" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
+                    <input type="text" name="attr_Agility_Ability_score" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
+                    <input type="text" name="attr_Inteligence_Ability_score" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Perception_Ability_score" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Mind_Ability_score" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Luck_Ability_score" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
                 </span>
 
-                <span id="column 3" class="stat-column" style="position: absolute; left: 239px;">
-                    <div style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                <span id="column 3" class="stat-column" style="position: absolute; left: 232px;">
+                    <div style="width: 68px;display: inline-block;height: 58px;">
                         <em class="stat-title-medium" style="font-size: 16px;display: block;margin-top: 10px;">Ability<br>Bonus</em>
                     </div>
 
-                    <input type="text" name="attr_Strength_Ability_Bonus" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Dexterity_Ability_Bonus" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Agility_Ability_Bonus" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Inteligence_Ability_Bonus" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Perception_Ability_Bonus" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Mind_Ability_Bonus" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Luck_Ability_Bonus" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Strength_Ability_Bonus" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 5px;">
+                    <input type="text" name="attr_Dexterity_Ability_Bonus" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
+                    <input type="text" name="attr_Agility_Ability_Bonus" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
+                    <input type="text" name="attr_Inteligence_Ability_Bonus" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Perception_Ability_Bonus" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Mind_Ability_Bonus" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Luck_Ability_Bonus" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
                 </span>
 
-                <span id="column 4" class="stat-column" style="position: absolute; left: 303px;">
-                    <div style="width: 58px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                <span id="column 4" class="stat-column" style="position: absolute; left: 297px;">
+                    <div style="width: 58px;display: inline-block;height: 58px;">
                         <em class="stat-title-medium" style="font-size: 16px;display: block;margin-top: 18px;">Class</em>
                     </div>
 
-                    <input type="text" name="attr_Strength_Class" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Dexterity_Class" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Agility_Class" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Inteligence_Class" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Perception_Class" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Mind_Class" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Luck_Class" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Strength_Class" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 5px;margin-left: 4px;">
+                    <input type="text" name="attr_Dexterity_Class" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;margin-left: 4px;">
+                    <input type="text" name="attr_Agility_Class" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;margin-left: 4px;">
+                    <input type="text" name="attr_Inteligence_Class" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;margin-left: 4px;">
+                    <input type="text" name="attr_Perception_Class" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;margin-left: 4px;">
+                    <input type="text" name="attr_Mind_Class" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;margin-left: 4px;">
+                    <input type="text" name="attr_Luck_Class" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;margin-left: 4px;">
                 </span>
 
-                <span id="column 5" class="stat-column" style="position: absolute; left: 356px;">
-                    <div style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                <span id="column 5" class="stat-column" style="position: absolute; left: 353px;">
+                    <div style="width: 68px;display: inline-block;height: 58px;">
                         <em class="stat-title-medium" style="font-size: 18px;display: block;margin-top: 18px;">Mod</em>
                     </div>
 
-                    <input type="text" name="attr_Strength_Mod" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Dexterity_Mod" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Agility_Mod" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Inteligence_Mod" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Perception_Mod" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Mind_Mod" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Luck_Mod" placeholder="0" style="display: block;width: 55px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                </span>
+                    <input type="text" name="attr_Strength_Mod" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 5px;">
+                    <input type="text" name="attr_Dexterity_Mod" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
+                    <input type="text" name="attr_Agility_Mod" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
+                    <input type="text" name="attr_Inteligence_Mod" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Perception_Mod" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Mind_Mod" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;">
+                    <input type="text" name="attr_Luck_Mod" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;">
                 </span>
 
-                <span id="column 6" class="stat-column" style="position: absolute; left: 420px;">
-                    <div style="width: 56px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
+                <span id="column 6" class="stat-column" style="position: absolute; left: 418px;">
+                    <div style="width: 56px;display: inline-block;height: 58px;">
                         <em class="stat-title-medium" style="font-size: 16px;display: block;margin-top: 10px;">Skill<br>etc.</em>
                     </div>
 
-                    <input type="text" name="attr_Strength_Skill" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Dexterity_Skill" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Agility_Skill" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Inteligence_Skill" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Perception_Skill" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Mind_Skill" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Luck_Skill" placeholder="0" style="display: block;width: 46px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Strength_Skill" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 5px;margin-left: 4px;">
+                    <input type="text" name="attr_Dexterity_Skill" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;margin-left: 4px;">
+                    <input type="text" name="attr_Agility_Skill" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;margin-left: 4px;">
+                    <input type="text" name="attr_Inteligence_Skill" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;margin-left: 4px;">
+                    <input type="text" name="attr_Perception_Skill" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;margin-left: 4px;">
+                    <input type="text" name="attr_Mind_Skill" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;margin-left: 4px;">
+                    <input type="text" name="attr_Luck_Skill" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;margin-left: 4px;">
                 </span>
-                <span id="column 7" class="stat-column" style="position: absolute; left: 475px;">
+
+                <span id="column 7" class="stat-column" style="position: absolute; left: 472px;">
                     <div style="width: 96px;display: inline-block;/*! margin-left: 72px; */height: 58px;">
                         <em class="stat-title-medium" style="font-size: 16px;display: block;margin-top: 10px;">Check<br>(# of dice)</em>
                     </div>
 
-                    <input type="text" name="attr_Strength_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 10px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Dexterity_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Agility_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Inteligence_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Perception_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Mind_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_Luck_check" placeholder="0" style="display: block;width: 44px;border-style: none;margin-top: 15px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_Strength_check" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 5px;width: 42px;">
+                    <input type="text" name="attr_Dexterity_check" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;width: 42px;">
+                    <input type="text" name="attr_Agility_check" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;width: 42px;">
+                    <input type="text" name="attr_Inteligence_check" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;width: 42px;">
+                    <input type="text" name="attr_Perception_check" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;width: 42px;">
+                    <input type="text" name="attr_Mind_check" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 12px;width: 42px;">
+                    <input type="text" name="attr_Luck_check" placeholder="0" size="1" class="ability-box num big-input-numeral" style="height: 32px;margin-top: 11px;width: 42px;">
                 </span>
             </div>
 
@@ -267,11 +270,11 @@
                     </div>
 
                     <div id="character-origin" style="position: absolute; top: 760px; left: 585px;">
-                        <input type="text" class="big-input-numeral" name="attr_cheat" style="margin-top: 0px; width: 324px; border-style: none;height: 32px;margin-top: 12px;font-size: 18px;">
+                        <input type="text" class="big-input-numeral" name="attr_cheat" style="margin-top: 0px; width: 324px; border-style: none;height: 28px;margin-top: 12px;font-size: 18px;">
                     </div>
 
                     <div id="character-cheat-desc" style="position: absolute; top: 800px; left: 585px;">
-                        <textarea type="text" name="attr_cheat_desc" placeholder="0" style="display: block; width: 325px; border-style: none; height: 96px; margin-top: -4px; font-size: 14px; margin-left: 0px;" size="1" class="num big-input-numeral"></textarea>
+                        <textarea type="text" name="attr_cheat_desc" placeholder="0" style="display: block; width: 325px; border-style: none; height: 96px; margin-top: -4px; font-size: 13.5px; margin-left: 0px;" size="1" class="num big-input-numeral"></textarea>
                     </div>
                 </div>
             </div>
