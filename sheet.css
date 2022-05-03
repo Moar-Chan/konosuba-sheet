@@ -82,7 +82,7 @@
 }
 
 .big-input-numeral {
-    font-size:27px;
+    font-size:26px;
     font-family: 'Courier New', monospace;
     text-align: center;
 
@@ -301,4 +301,8 @@
 
 .mob-input {
     font-size:14px;
+}
+
+button[type=roll].sheet-blank-roll-button::before {
+    content: '';
 }

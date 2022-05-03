@@ -50,9 +50,10 @@
                     <br>
                     <div class="mini-gap-remover"/>
                     <select class="hiding drop-down-selector" name="attr_race" style="width: 256px; margin-left: 4px; margin-right: 4px; margin-bottom: 4px;">
-                        <option value="Native" data-i18n="Native">Native Inhabitant</option>
-                        <option value="Reincarnated" data-i18n="Reincarnated">Reincarnated Person</option>
-                        <option value="Crimson" data-i18n="Crimson">Crimson Magic Clan Member</option>
+                        <option value="Native" data-i18n="Native Inhabitant">Native Inhabitant</option>
+                        <option value="Reincarnated" data-i18n="Reincarnated Person">Reincarnated Person</option>
+                        <option value="Crimson" data-i18n="Crimson Magic Clan Member">Crimson Magic Clan Member</option>
+                        <option value="beast" data-i18n="Beastman">Beastman</option>
                     </select>
                 </div>
         
@@ -71,7 +72,7 @@
                         <option value="Archer" data-i18n="Archer">Archer</option>
                         <option value="Elemental_Master" data-i18n="Elemental Master">Elemental Master</option>
                         <option value="Creator" data-i18n="Creator">Creator</option>
-                        <option value="Swordfighter" data-i18n="Swordfighter">Swordfighter</option>
+                        <option value="Swordfighter" data-i18n="Sword fighter">Sword fighter</option>
                         <option value="Knight" data-i18n="Knight">Knight</option>
                         <option value="Lancer" data-i18n="Lancer">Lancer</option>
                         <option value="Rune_Knight" data-i18n="Rune Knight">Rune Knight</option>
@@ -246,20 +247,33 @@
 
                     <div id="character-origin" style="position: absolute; top: 793px; left: 593px;">
                         <em class="input-title-tiny" style="display: inline-block;">Origin:</em>
-                        <input type="text" class="big-input-numeral" name="attr_origin" style="margin-top: 0px; width: 266px; border-style: none;height: 32px;margin-top: 12px;font-size: 24px;">
+                        <input type="text" class="big-input-numeral" name="attr_origin" style="margin-top: 0px; width: 266px; border-style: none;height: 32px;margin-top: 12px;font-size: 20px;">
                     </div>
 
                     <div id="character-circumstance" style="position: absolute; top: 831px; left: 593px;">
                         <em class="input-title-tiny" style="display: inline-block;">Circumstance:</em>
-                        <input type="text" class="big-input-numeral" name="attr_circumstance" style="margin-top: 0px; width: 216px; border-style: none;height: 32px;margin-top: 12px;font-size: 24px;">
+                        <input type="text" class="big-input-numeral" name="attr_circumstance" style="margin-top: 0px; width: 216px; border-style: none;height: 32px;margin-top: 12px;font-size: 20px;">
                     </div>
 
                     <div id="character-goal" style="position: absolute; top: 869px; left: 595px;">
                         <em class="input-title-tiny" style="display: inline-block;">Goal:</em>
-                        <input type="text" class="big-input-numeral" name="attr_goal" style="margin-top: 0px; width: 279px; border-style: none;height: 32px;margin-top: 12px;font-size: 24px;">
+                        <input type="text" class="big-input-numeral" name="attr_goal" style="margin-top: 0px; width: 279px; border-style: none;height: 32px;margin-top: 12px;font-size: 20px;">
                     </div>
                 </div>
 
+                <div id="cheat">
+                    <div id="character-cheat" style="position: absolute; top: 936px; left: 596px;">
+                        <em class="input-title-large">Cheat</em>
+                    </div>
+
+                    <div id="character-origin" style="position: absolute; top: 968px; left: 593px;">
+                        <input type="text" class="big-input-numeral" name="attr_cheat" style="margin-top: 0px; width: 324px; border-style: none;height: 32px;margin-top: 12px;font-size: 18px;">
+                    </div>
+
+                    <div id="character-cheat-desc" style="position: absolute; top: 1020px; left: 593px;">
+                        <textarea type="text" name="attr_cheat_desc" placeholder="0" style="display: block; width: 325px; border-style: none; height: 96px; margin-top: -4px; font-size: 14px; margin-left: 0px;" size="1" class="num big-input-numeral"></textarea>
+                    </div>
+                </div>
             </div>
 
             <div id="equipment">
@@ -267,23 +281,23 @@
                     <em class="stat-title-medium" style="font-size: 23px;display: block;margin-top: 16px;text-align: left;">Equipment</em>
 
                     <em class="stat-title-medium" style="font-size: 16px;display: inline-block;margin-top: 7px;text-align: left;">Right hand</em>
-                    <input type="text" class="big-input-numeral" name="attr_right_hand" style="margin-top: 0px; width: 127px; border-style: none;height: 30px;margin-top: -3px;font-size: 14px;">
-                    
+                    <input type="text" class="big-input-numeral" name="attr_right_hand" style="margin-top: 0px; width: 120px; border-style: none;height: 30px;margin-top: -3px;font-size: 14px;">
+                    <br>
                     <em class="stat-title-medium" style="font-size: 16px;display: inline-block;margin-top: 6px;text-align: left;">Left hand</em>
-                    <input type="text" class="big-input-numeral" name="attr_left_hand" style="margin-top: 0px; width: 128px; border-style: none;height: 30px;margin-top: -3px;font-size: 14px;">
-                    
+                    <input type="text" class="big-input-numeral" name="attr_left_hand" style="margin-top: 0px; width: 128px; border-style: none;height: 30px;margin-top: -6px;font-size: 14px;">
+                    <br>
                     <em class="stat-title-medium" style="font-size: 16px;display: inline-block;margin-top: 6px;text-align: left;">Head</em>
                     <input type="text" class="big-input-numeral" name="attr_head" style="margin-top: 0px; width: 150px; border-style: none;height: 30px;margin-top: -3px;font-size: 14px;">
-                    
+                    <br>
                     <em class="stat-title-medium" style="font-size: 16px;display: inline-block;margin-top: 5px;text-align: left;">Body</em>
-                    <input type="text" class="big-input-numeral" name="attr_body" style="margin-top: 0px; width: 150px; border-style: none;height: 30px;margin-top: -3px;font-size: 14px;">
-                    
+                    <input type="text" class="big-input-numeral" name="attr_body" style="margin-top: 0px; width: 169px; border-style: none;height: 30px;margin-top: -3px;font-size: 14px;">
+                    <br>
                     <em class="stat-title-medium" style="font-size: 16px;display: inline-block;margin-top: 5px;text-align: left;">Other</em>
-                    <input type="text" class="big-input-numeral" name="attr_other" style="margin-top: 0px; width: 110px; border-style: none;height: 30px;margin-top: -3px;font-size: 14px;">
-                    
+                    <input type="text" class="big-input-numeral" name="attr_other" style="margin-top: 0px; width: 140px; border-style: none;height: 30px;margin-top: -3px;font-size: 14px;">
+                    <br>
                     <em class="stat-title-medium" style="font-size: 16px;display: inline-block;margin-top: 5px;text-align: left;">Accessory</em>
                     <input type="text" class="big-input-numeral" name="attr_Accessory" style="margin-top: 0px; width: 110px; border-style: none;height: 30px;margin-top: -3px;font-size: 14px;">
-                    
+                    <br>
                     <em class="stat-title-medium" style="font-size: 16px;display: inline-block;margin-top: 5px;text-align: left;">Total</em>
                 </span>
 
@@ -298,7 +312,7 @@
                     <input type="text" name="attr_weight_body" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
                     <input type="text" name="attr_weight_other" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
                     <input type="text" name="attr_weight_accessory" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_weight_total" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_weight_total" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;font-size:15px;" size="1" class="num big-input-numeral">
                 </span>
 
                 <span id="column 2" style="position: absolute; left: 316px;top: 1148px;">
@@ -431,30 +445,364 @@
         </div>
         
         <div class="journal-sheet-background sheet-journal">
+            <div id="combat">
+                <span id="column 0" style="position: absolute; left: 42px; top: 132px; width: 182px;">
+                    <em class="stat-title-medium" style="font-size: 23px;display: block;text-align: left;">Combat</em>
+                    
+                    <div style="width: 172px;display: inline-block; height: 42px;margin-top: 10px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">Hit check<br>(Dexterity)</em>
+                    </div>
+                    <div style="width: 172px;display: inline-block; height: 46px;margin-top: -4px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">Attack power</em>
+                    </div>
+                    <div style="width: 172px;display: inline-block; height: 46px;margin-top: -3px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">Dodge check<br>(Agility)</em>
+                    </div>
+                    <div style="width: 172px;display: inline-block; height: 46px;margin-top: -3px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">Physical defense</em>
+                    </div>
+                    <div style="width: 172px;display: inline-block; height: 46px;margin-top: -3px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">Magic defense<br>(Mind)</em>
+                    </div>
+                    <div style="width: 172px;display: inline-block; height: 46px;margin-top: -4px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">Action points<br>(Agility + Perception)</em>
+                    </div>
+                    <div style="width: 172px;display: inline-block; height: 46px;margin-top: -3px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">Movement<br>(Strength + 5)</em>
+                    </div>
+                </span>
+
+                <span id="column 1" style="position: absolute; left: 224px;top: 132px; width: 56px;">
+                    <div style="width: 56px;display: inline-block;height: 46px;">
+                        <em class="stat-title-medium" style="font-size: 17px;display: block;margin-top: 8px;">Check</em>
+                    </div>
+                    
+                    <input type="text" name="attr_hit_check_check" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 0px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_dodge_check" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 46px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_magic_defence_check" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 46px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_action_points_check" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 4px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_mmovement_check" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 4px;" size="1" class="num big-input-numeral">
+                </span>
+
+                <span id="column 2" style="position: absolute; left: 278px;top: 132px; width: 56px;">
+                    <div style="width: 56px;display: inline-block;height: 46px;">
+                        <em class="stat-title-medium" style="font-size: 12px;display: block;margin-top: 4px;">Hit<br>Modifier</em>
+                    </div>
+                    
+                    <input type="text" name="attr_hit_check_hit_modifier" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 0px;" size="1" class="num big-input-numeral">
+                </span>
+
+                <span id="column 3" style="position: absolute; left: 333px;top: 132px; width: 56px;">
+                    <div style="width: 56px;display: inline-block;height: 46px;">
+                        <em class="stat-title-medium" style="font-size: 12px;display: block;margin-top: 4px;">Attack<br>Power</em>
+                    </div>
+                    
+                    <input type="text" name="attr_attack_power_attack_power" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 42px;" size="1" class="num big-input-numeral">
+                </span>
+
+                <span id="column 3" style="position: absolute; left: 388px;top: 132px; width: 56px;">
+                    <div style="width: 56px;display: inline-block;height: 46px;">
+                        <em class="stat-title-medium" style="font-size: 12px;display: block;margin-top: 4px;">dodge<br>Modifier</em>
+                    </div>
+                    
+                    <input type="text" name="attr_dodge_check_dodge_modifer" placeholder="0" style="display: block;width: 53px;border-style: none;margin-top: 85px;" size="1" class="num big-input-numeral">
+                </span>
+
+                <span id="column 4" style="position: absolute; left: 443px;top: 132px; width: 56px;">
+                    <div style="width: 56px;display: inline-block;height: 46px;">
+                        <em class="stat-title-medium" style="font-size: 12px;display: block;margin-top: 4px;">Physical<br>Defense</em>
+                    </div>
+                    
+                    <input type="text" name="attr_physical_defense_physical_defense" placeholder="0" style="display: block;width: 53px;border-style: none;margin-top: 130px;" size="1" class="num big-input-numeral">
+                </span>
+
+                <span id="column 5" style="position: absolute; left: 496px;top: 132px; width: 56px;">
+                    <div style="width: 56px;display: inline-block;height: 46px;">
+                        <em class="stat-title-medium" style="font-size: 12px;display: block;margin-top: 4px;">Magic<br>Defense</em>
+                    </div>
+                    
+                    <input type="text" name="attr_magic_defense_magic_defense" placeholder="0" style="display: block;width: 53px;border-style: none;margin-top: 173px;" size="1" class="num big-input-numeral">
+                </span>
+
+                <span id="column 6" style="position: absolute; left: 552px;top: 132px; width: 56px;">
+                    <div style="width: 56px;display: inline-block;height: 46px;">
+                        <em class="stat-title-medium" style="font-size: 12px;display: block;margin-top: 4px;">Action<br>Modifier</em>
+                    </div>
+                    
+                    <input type="text" name="attr_action_points_action_modifier" placeholder="0" style="display: block;width: 53px;border-style: none;margin-top: 216px;" size="1" class="num big-input-numeral">
+                </span>
+                
+                <span id="column 7" style="position: absolute; left: 606px;top: 132px; width: 56px;">
+                    <div style="width: 56px;display: inline-block;height: 46px;">
+                        <em class="stat-title-medium" style="font-size: 11px;display: block;margin-top: 4px;">Movement<br>Modifier</em>
+                    </div>
+                    
+                    <input type="text" name="attr_movement_move_modifier" placeholder="0" style="display: block;width: 53px;border-style: none;margin-top: 259px;" size="1" class="num big-input-numeral">
+                </span>
+
+                <span id="column 9" style="position: absolute; left: 661px;top: 132px; width: 56px;">
+                    <div style="width: 56px;display: inline-block;height: 46px;">
+                        <em class="stat-title-medium" style="font-size: 17px;display: block;margin-top: 8px;">Skills</em>
+                    </div>
+                    
+                    <input type="text" name="attr_hit_check_skills" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 0px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_attack_power_skills" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 2px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_dodge_check_skills" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 2px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_physical_defense_skills" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 4px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_magic_defense_skills" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 4px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_action_points_skills" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 4px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_movement_skills" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 4px;" size="1" class="num big-input-numeral">
+                </span>
+                
+                <span id="column 10" style="position: absolute; left: 715px;top: 132px; width: 56px;">
+                    <div style="width: 56px;display: inline-block;height: 46px;">
+                        <em class="stat-title-medium" style="font-size: 17px;display: block;margin-top: 8px;">Other</em>
+                    </div>
+                    
+                    <input type="text" name="attr_hit_check_other" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 0px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_attack_power_other" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 2px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_dodge_modifer_other" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 2px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_physical_defense_other" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 4px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_magic_defense_other" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 4px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_action_modifier_other" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 4px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_movement_modifier_other" placeholder="0" style="display: block;width: 48px;border-style: none;margin-top: 4px;" size="1" class="num big-input-numeral">
+                </span>
+
+                <span id="column 11" style="position: absolute; left: 775px;top: 132px; width: 130px;">
+                    <div style="width: 130px;display: inline-block;height: 46px;">
+                        <em class="stat-title-medium" style="font-size: 17px;display: block;margin-top: 8px;">Total (# of dice)</em>
+                    </div>
+
+                    <div>
+                        <input type="text" name="attr_hit_check_total" placeholder="0" style="display: block;width: 86px;border-style: none;margin-top: 3px;height: 30px;" size="1" class="num big-input-numeral">
+                        <input type="text" name="attr_hit_check_dice" placeholder="2" size="1" class="num big-input-numeral" style="display: inline-block;width: 18px;border-style: none;height: 20px;margin-top: -32px;margin-left: 96px;font-size: 16px;">
+                    </div>
+
+                    <div>
+                        <input type="text" name="attr_attack_power_total" placeholder="0" style="display: block;width: 86px;border-style: none;margin-top: -4px;height: 30px;" size="1" class="num big-input-numeral">
+                        <input type="text" name="attr_attack_power_dice" placeholder="2" size="1" class="num big-input-numeral" style="display: inline-block;width: 18px;border-style: none;height: 20px;margin-top: -32px;margin-left: 96px;font-size: 16px;">
+                    </div>
+
+                    <div>
+                        <input type="text" name="attr_dodge_check_total" placeholder="0" style="display: block;width: 86px;border-style: none;margin-top: -5px;height: 30px;" size="1" class="num big-input-numeral">
+                        <input type="text" name="attr_dodge_check_dice" placeholder="2" size="1" class="num big-input-numeral" style="display: inline-block;width: 18px;border-style: none;height: 20px;margin-top: -32px;margin-left: 96px;font-size: 16px;">
+                    </div>
+
+                    <input type="text" name="attr_physical_defense_total" placeholder="0" style="display: block;width: 86px;border-style: none;margin-top: -6px;height: 30px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_magic_defense_total" placeholder="0" style="display: block;width: 86px;border-style: none;margin-top: 14px;height: 30px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_action_points_total" placeholder="0" style="display: block;width: 86px;border-style: none;margin-top: 14px;height: 30px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_movement_total" placeholder="0" style="display: block;width: 86px;border-style: none;margin-top: 14px;height: 30px;" size="1" class="num big-input-numeral">
+                </span>
+            </div>
+
             <div id="special-checks">
                 <span id="column 0" style="position: absolute; left: 42px; top: 502px; width: 220px;">
                     <em class="stat-title-medium" style="font-size: 23px;display: block;margin-top: 16px;text-align: left;">Special checks</em>
+
+                    <div style="width: 172px;display: inline-block; height: 42px;">
+                        <button class="sheet-blank-button btn ui-draggable" type="roll" name="roll_detect_traps" value="/roll @{detect_traps_dice}d6 + @{detect_traps_total}" style="height:16px;margin-top:2px;margin-bottom:-3px;transform: translate(20%, 0);">Detect traps</button>
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">(Perception)</em>
+                    </div>
+
+                    <div style="width: 172px;display: inline-block; height: 42px;margin-top: -2px;">
+                        <button class="sheet-blank-button btn ui-draggable" type="roll" name="roll_disarm_traps" value="/roll @{disarm_traps_dice}d6 + @{disarm_traps_total}" style="height:16px;margin-top:2px;margin-bottom:-3px;transform: translate(16%, 0);">Disarm traps</button>
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">(Dexterity)</em>
+                    </div>
+
+                    <div style="width: 172px;display: inline-block; height: 42px;margin-top: -2px;">
+                        <button class="sheet-blank-button btn ui-draggable" type="roll" name="roll_sense_threats" value="/roll @{sense_threats_dice}d6 + @{sense_threats_total}" style="height:16px;margin-top:2px;margin-bottom:-3px;transform: translate(15%, 0);">Sense threats</button>
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">(Perception)</em>
+                    </div>
+
+                    <div style="width: 172px;display: inline-block; height: 42px;margin-top: -1px;">
+                        <button class="sheet-blank-button btn ui-draggable" type="roll" name="roll_identify_enemy" value="/roll @{identify_enemy_dice}d6 + @{identify_enemy_total}" style="height:16px;margin-top:2px;margin-bottom:-3px;transform: translate(10%, 0);">Identify enemy</button>
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">(Inteligence)</em>
+                    </div>
+
+                    <div style="width: 172px;display: inline-block; height: 42px;margin-top: -2px;">
+                        <button class="sheet-blank-button btn ui-draggable" type="roll" name="roll_magic_check" value="/roll @{magic_check_dice}d6 + @{magic_check_total}" style="height:16px;margin-top:2px;margin-bottom:-3px;transform: translate(20%, 0);">Magic check</button>
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;">(Inteligence)</em>
+                    </div>
                 </span>
+
+                <span id="column 1" style="position: absolute; left: 212px;top: 502px; width: 68px;">
+                    <div style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 48px;">
+                        <em class="stat-title-medium" style="font-size: 18px;display: block;margin-top: 16px;">Check</em>
+                    </div>
+                    
+                    <input type="text" name="attr_detect_traps_check" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 3px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_disarm_traps_check" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 3px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_sense_threats_check" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 3px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_identify_enemy_check" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 4px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_magic_check_check" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 4px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                </span>
+
+                <span id="column 2" style="position: absolute; left: 278px;top: 502px; width: 68px;">
+                    <div style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 48px;">
+                        <em class="stat-title-medium" style="font-size: 18px;display: block;margin-top: 16px;">Skill</em>
+                    </div>
+                    
+                    <input type="text" name="attr_detect_traps_skill" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 3px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_disarm_traps_skill" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 3px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_sense_threats_skill" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 3px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_identify_enemy_skill" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 4px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_magic_check_skill" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 4px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                </span>
+
+                <span id="column 3" style="position: absolute; left: 344px;top: 502px; width: 68px;">
+                    <div style="width: 68px;display: inline-block;/*! margin-left: 72px; */height: 48px;">
+                        <em class="stat-title-medium" style="font-size: 18px;display: block;margin-top: 16px;">Other</em>
+                    </div>
+                    
+                    <input type="text" name="attr_detect_traps_other" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 3px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_disarm_traps_other" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 3px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_sense_threats_other" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 3px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_identify_enemy_other" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 4px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_magic_check_other" placeholder="0" style="display: block;width: 58px;border-style: none;margin-top: 4px;margin-left: 6px;" size="1" class="num big-input-numeral">
+                </span>
+
+                <span id="column 4" style="position: absolute; left: 410px;top: 502px; width: 100px;">
+                    <div style="width: 97px;display: inline-block;height: 48px;">
+                        <em class="stat-title-medium" style="font-size: 16px;display: block;margin-top: 2px;">Total<br>(# of dice)</em>
+                    </div>
+                    
+                    
+                    <div>
+                        <input type="text" name="attr_detect_traps_total" placeholder="0" style="display: block;width: 42px;border-style: none;margin-top: 6px;margin-left: 6px;height: 30px;" size="1" class="num big-input-numeral">
+                        <input type="text" name="attr_detect_traps_dice" placeholder="2" size="1" class="num big-input-numeral" style="display: inline-block;width: 18px;border-style: none;height: 20px;margin-top: -32px;margin-left: 50px;font-size: 16px;">
+                    </div>
+
+                    <div>
+                        <input type="text" name="attr_disarm_traps_total" placeholder="0" style="display: block;width: 42px;border-style: none;margin-top: -4px;margin-left: 6px;height: 30px;" size="1" class="num big-input-numeral">
+                        <input type="text" name="attr_disarm_traps_dice" placeholder="2" size="1" class="num big-input-numeral" style="display: inline-block;width: 18px;border-style: none;height: 20px;margin-top: -32px;margin-left: 50px;font-size: 16px;">
+                    </div>
+
+                    <div>
+                        <input type="text" name="attr_sense_threats_total" placeholder="0" style="display: block;width: 42px;border-style: none;margin-top: -6px;margin-left: 6px;height: 30px;" size="1" class="num big-input-numeral">
+                        <input type="text" name="attr_sense_threats_dice" placeholder="2" size="1" class="num big-input-numeral" style="display: inline-block;width: 18px;border-style: none;height: 20px;margin-top: -32px;margin-left: 50px;font-size: 16px;">
+                    </div>
+
+                    <div>
+                        <input type="text" name="attr_identify_enemy_total" placeholder="0" style="display: block;width: 42px;border-style: none;margin-top: -4px;margin-left: 6px;height: 30px;" size="1" class="num big-input-numeral">
+                        <input type="text" name="attr_identify_enemy_dice" placeholder="2" size="1" class="num big-input-numeral" style="display: inline-block;width: 18px;border-style: none;height: 20px;margin-top: -32px;margin-left: 50px;font-size: 16px;">
+                    </div>
+
+                    <div>
+                        <input type="text" name="attr_magic_check_total" placeholder="0" style="display: block;width: 42px;border-style: none;margin-top: -5px;margin-left: 6px;height: 30px;" size="1" class="num big-input-numeral">
+                        <input type="text" name="attr_magic_check_dice" placeholder="2" size="1" class="num big-input-numeral" style="display: inline-block;width: 18px;border-style: none;height: 20px;margin-top: -32px;margin-left: 50px;font-size: 16px;">
+                    </div>
+                </span>
+            </div>
+
+            <div id="character-inventory">
+                <div id="column-1" style="position: absolute; top: 510px; left: 529px;">
+                    <em style="display: inline-block;margin-left: 8px;" class="input-title-medium">Inventory:</em>
+
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv1" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 6px;font-size: 16px;">
+                    <input type="text" name="attr_inv1_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 16px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv2" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 4px;font-size: 16px;">
+                    <input type="text" name="attr_inv2_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv3" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv3_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv4" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv4_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv5" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv5_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv6" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv6_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv7" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv7_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv8" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv8_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv9" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv9_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                
+                    <div id="player-inv-weight" style="position: absolute;">
+                        <em style="font-size: 22px;margin-left: 4px;" class="input-title-medium">Weight</em>
+                        <br>
+                        <div class="mini-gap-remover"></div>
+                        <input type="text" name="attr_inv_weight_total" class="big-input-text-hand" style="width: 185px;font-size: 14px;font-family: 'Courier New', monospace;">
+                    </div>
+                </div>
+                <div id="column-2" style="position: absolute; top: 529px; left: 726px;">
+                    <em style="display: inline-block;margin-left: 8px;" class="input-title-medium"> </em>
+
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv10" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 6px;font-size: 16px;">
+                    <input type="text" name="attr_inv10_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 16px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv11" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 4px;font-size: 16px;">
+                    <input type="text" name="attr_inv11_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv12" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv12_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv13" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv13_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv14" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv14_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv15" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv15_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv16" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv16_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv17" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv17_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    <br>
+                    <input type="text" class="big-input-numeral" name="attr_inv18" style="margin-top: 0px; width: 146px; border-style: none;height: 28px;margin-top: 5px;font-size: 16px;">
+                    <input type="text" name="attr_inv18_weight" placeholder="0" size="1" class="num big-input-numeral" style="display: inline-block;width: 38px;border-style: none;height: 20px;margin-top: 12px;margin-left: -3px;font-size: 16px;">
+                    
+                    <div id="player-money" style="position: absolute;">
+                        <em style="font-size: 22px;margin-left: 4px;" class="input-title-medium">Money</em>
+                        <br>
+                        <div class="mini-gap-remover"></div>
+                        <input type="text" name="attr_money" class="big-input-text-hand" style="width: 185px;font-size: 14px;font-family: 'Courier New', monospace;">
+                    </div>
+                </div>
+            </div>
+
+            <div id="lifestyle" style="position: absolute; top: 776px; left: 44px;">
+                <em class="input-title-large">Lifestyle</em>
+                <br>
+                <select class="hiding drop-down-selector" name="attr_lifestyle" style="width: 256px; margin-left: 4px; margin-right: 4px; margin-bottom: 4px;">
+                    <option value="Stable-living" data-i18n="Stable-living">[Stable living]</option>
+                    <option value="Simple-living" data-i18n="Simple-living">[Simple living]</option>
+                    <option value="Economy" data-i18n="Economy">[Economy]</option>
+                    <option value="Suit" data-i18n="Suit">[Suit]</option>
+                    <option value="Royal" data-i18n="Royal">[Royal]</option>
+                </select>
             </div>
 
             <div id="skills">
                 <span id="column 0" style="position: absolute; left: 42px; top: 902px; width: 220px;">
                     <em class="stat-title-medium" style="font-size: 23px;display: block;margin-top: 16px;text-align: left;">Skills</em>
                         
-                    <input type="text" class="big-input-numeral" name="attr_skill1" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 6px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill2" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill3" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill4" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill5" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill6" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill7" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill8" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill9" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill10" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill11" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill12" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill13" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
-                    <input type="text" class="big-input-numeral" name="attr_skill14" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 14px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill1" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 6px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill2" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill3" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill4" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill5" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill6" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill7" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill8" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill9" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill10" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill11" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill12" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill13" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
+                    <input type="text" class="big-input-numeral" name="attr_skill14" style="margin-top: 0px; width: 164px; border-style: none;height: 30px;margin-top: 3px;font-size: 13px;">
                 </span>
 
                 <span id="column 1" style="position: absolute; left: 210px; top: 917px;">
@@ -483,20 +831,20 @@
                         <em class="stat-title-medium" style="font-size: 11px;display: block;margin-top: 3px;">Timing</em>
                     </div>
                     
-                    <input type="text" name="attr_skill1_timing" placeholder="0" size="1" class="num big-input-numeral" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;">
-                    <input type="text" name="attr_skill2_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill3_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill4_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill5_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill6_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill7_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill8_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill9_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill10_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill11_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill12_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill13_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill14_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill1_timing" placeholder="0" size="1" class="num big-input-numeral" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;">
+                    <input type="text" name="attr_skill2_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill3_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill4_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill5_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill6_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill7_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill8_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill9_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill10_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill11_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill12_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill13_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill14_timing" placeholder="0" style="display: block;width: 84px;border-style: none;height: 34px;margin-top: -1px;font-size: 18px;" size="1" class="num big-input-numeral">
                 </span>
 
                 <span id="column 3" style="position: absolute; left: 342px; top: 919px;">
@@ -504,20 +852,20 @@
                         <em class="stat-title-medium" style="font-size: 11px;display: block;margin-top: 1px;">Check</em>
                     </div>
                     
-                    <input type="text" name="attr_skill1_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill2_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill3_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill4_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill5_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill6_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill7_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill8_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill9_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill10_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 34px;margin-top: 2px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill11_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 2px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill12_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill13_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 2px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill14_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 2px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill1_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 0px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill2_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill3_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill4_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill5_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill6_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill7_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill8_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill9_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill10_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 34px;margin-top: 2px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill11_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 2px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill12_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 3px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill13_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 2px;font-size: 20px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill14_check" placeholder="0" style="display: block;width: 65px;border-style: none;height: 30px;margin-top: 2px;font-size: 20px;" size="1" class="num big-input-numeral">
                 </span>
 
                 <span id="column 4" style="position: absolute; left: 411px; top: 919px;">
@@ -525,20 +873,20 @@
                         <em class="stat-title-medium" style="font-size: 11px;display: block;margin-top: 1px;">Target</em>
                     </div>
                     
-                    <input type="text" name="attr_skill1_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill2_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill3_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -2px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill4_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill5_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill6_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill7_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -2px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill8_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill9_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill10_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill11_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill12_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -2px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill13_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill14_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill1_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill2_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill3_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -2px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill4_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill5_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill6_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill7_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -2px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill8_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill9_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill10_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill11_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill12_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -2px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill13_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill14_target" placeholder="0" style="display: block;width: 64px;border-style: none;height: 34px;margin-top: -1px;margin-left: 0px;font-size: 16px;" size="1" class="num big-input-numeral">
                     
                     
                     
@@ -552,20 +900,20 @@
                         <em class="stat-title-medium" style="font-size: 11px;display: block;margin-top: 1px;">Range</em>
                     </div>
                     
-                    <input type="text" name="attr_skill1_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill2_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill3_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill4_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -2px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill5_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill6_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill7_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill8_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -2px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill9_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill10_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill11_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -2px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill12_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill13_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill14_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -2px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill1_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill2_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill3_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill4_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -2px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill5_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill6_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill7_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill8_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -2px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill9_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill10_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill11_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -2px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill12_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill13_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -1px;font-size: 16px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill14_range" placeholder="0" style="display: block;width: 52px;border-style: none;height: 34px;margin-top: -2px;font-size: 16px;" size="1" class="num big-input-numeral">
                     
                     
                     
@@ -579,20 +927,20 @@
                         <em class="stat-title-medium" style="font-size: 11px;display: block;margin-top: 1px;">Cost</em>
                     </div>
                     
-                    <input type="text" name="attr_skill1_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill2_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill3_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill4_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -2px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill5_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill6_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill7_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -2px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill8_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill9_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill10_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill11_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill12_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -2px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill13_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -2px;" size="1" class="num big-input-numeral">
-                    <input type="text" name="attr_skill14_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -2px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill1_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill2_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill3_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill4_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -2px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill5_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill6_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill7_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -2px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill8_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill9_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill10_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill11_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -1px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill12_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -2px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill13_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -2px;font-size: 24px;" size="1" class="num big-input-numeral">
+                    <input type="text" name="attr_skill14_cost" placeholder="0" style="display: block;width: 42px;border-style: none;height: 34px;margin-top: -2px;font-size: 24px;" size="1" class="num big-input-numeral">
                 </span>
 
                 <span id="column 7" style="position: absolute; left: 572px; top: 919px;">
@@ -699,6 +1047,10 @@
             <tr>
                 <th style="text-align: right;">defence(phys/magi):</th>
                 <td><input type="text" name="attr_mob_defence" placeholder="mob element" size="26" class="mob-input"></td>
+            </tr>
+            <tr>
+                <th style="text-align: right;">defence(phys/magi/method/type):</th>
+                <td><input type="text" name="attr_mob_attack" placeholder="mob element" size="26" class="mob-input"></td>
             </tr>
             <tr>
                 <th style="text-align: right;">hp:</th>
