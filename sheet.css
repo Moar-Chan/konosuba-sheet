@@ -310,8 +310,42 @@
     top: 539px;
 }
 
+.combat-column {
+    top: 115px;
+}
+
+.special-column {
+    top: 474px;
+    width: 68px;
+}
+
 .column-space {
     margin-top: 5px;
+}
+
+.skill-column {
+    margin-top: 4px;
+}
+
+.skill-names {
+    margin-top: 0px;
+    width: 176px;
+    border-style: none;
+    height: 30px;
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+.skill-effect {
+    display: block;
+    width: 298px;
+    border-style: none;
+    height: 32px;
+    margin-top: -1px;
+    margin-bottom: 1px;
+    font-size: 10px;
+    margin-left: 0px;
+    line-height: 11.5px;
 }
 
 .ability-box {
@@ -321,7 +355,32 @@
     margin-left: 9px;
 }
 
+.inventory-input-name {
+    margin-top: 0px; 
+    width: 132px; 
+    border-style: none;
+    font-size: 13px;
+    margin-left: 4px;
+}
 
+.inventory-input-weight {
+    display: inline-block;
+    width: 38px;
+    border-style: none;
+    margin-left: -11px;
+    font-size: 15px;
+}
+
+.skill-level-input {
+    display: block;
+    width: 42px;
+    border-style: none;
+    margin-top: 3px;
+}
+
+.equipment-space {
+    margin-top: 35px;
+}
 
 .mob-input {
     font-size:14px;
