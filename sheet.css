@@ -389,3 +389,8 @@
 button[type=roll].sheet-blank-roll-button::before {
     content: '';
 }
+
+.mob-skill-input {
+    font-size: 12px;
+    line-height: 13px;
+}
