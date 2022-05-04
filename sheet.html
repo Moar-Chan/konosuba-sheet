@@ -1020,104 +1020,191 @@
         </div>
     </div>
     <div class="sheet-block-b">
-      <table id="mob">
-        <tr>
-            <th style="text-align: right;">Data:</th>
-          </tr>
+        <table id="mob">
             <tr>
-              <th style="text-align: right;">Type:</th>
-              <td><input type="text" name="attr_mob_type" placeholder="mob type" size="26" class="mob-input"></td>
-            </tr>
-            <tr>
-                <th style="text-align: right;">Element:</th>
-                <td><input type="text" name="attr_mob_element" placeholder="mob element" size="26" class="mob-input"></td>
-            </tr>
-            <tr>
-                <th style="text-align: right;">ID score:</th>
-                <td><input type="text" name="attr_mob_id" placeholder="mob element" size="26" class="mob-input"></td>
-            </tr>
-            <tr>
-                <th style="text-align: right;">Level:</th>
-                <td><input type="text" name="attr_mob_level" placeholder="mob element" size="26" class="mob-input"></td>
-            </tr>
-            <tr>
-                <th style="text-align: right;">Dodge:</th>
-                <td><input type="text" name="attr_mob_dodge" placeholder="mob element" size="26" class="mob-input"></td>
-            </tr>
-            <tr>
-                <th style="text-align: right;">defence(phys/magi):</th>
-                <td><input type="text" name="attr_mob_defence" placeholder="mob element" size="26" class="mob-input"></td>
-            </tr>
-            <tr>
-                <th style="text-align: right;">defence(phys/magi/method/type):</th>
-                <td><input type="text" name="attr_mob_attack" placeholder="mob element" size="26" class="mob-input"></td>
-            </tr>
-            <tr>
-                <th style="text-align: right;">hp:</th>
-                <td><input type="text" name="attr_hp_max" placeholder="mob element" size="26" class="mob-input"></td>
-            </tr>
-            <tr>
-                <th style="text-align: right;">Action:</th>
-                <td><input type="text" name="attr_mob_ac" placeholder="mob element" size="26" class="mob-input"></td>
-            </tr>
-            <tr>
-                <th style="text-align: right;">Movement:</th>
-                <td><input type="text" name="attr_mob_move" placeholder="mob element" size="26" class="mob-input"></td>
-            </tr>
-      </table>
+                <tr>
+                    <th style="text-align: right;">Type:</th>
+                    <td><input type="text" name="attr_mob_type" placeholder="mob type" size="26" class="mob-input"></td>
 
-      <table id="mob-skills">
-        <tr>
-            <th style="text-align: right;">Skills:</th>
-        </tr>
-        <tr>
-            <td>
-                <input type="text" name="attr_skill1" placeholder="mob skill" size="26" class="mob-input">
-                <input type="text" name="attr_skill2" placeholder="mob skill" size="26" class="mob-input">
-            </td>
-            <td>
-                <input type="text" name="attr_skill3" placeholder="mob skill" size="26" class="mob-input">
-                <input type="text" name="attr_skill4" placeholder="mob skill" size="26" class="mob-input">
-            </td>
-            <td>
-                <input type="text" name="attr_skill5" placeholder="mob skill" size="26" class="mob-input">
-                <input type="text" name="attr_skill6" placeholder="mob skill" size="26" class="mob-input">
-            </td>
-            <td>
-                <input type="text" name="attr_skill7" placeholder="mob skill" size="26" class="mob-input">
-                <input type="text" name="attr_skill8" placeholder="mob skill" size="26" class="mob-input">
-            </td>
-        </tr>
-      </table>
+                    <th style="text-align: right;">Element:</th>
+                    <td><input type="text" name="attr_mob_element" placeholder="mob element" size="26" class="mob-input"></td>
+                </tr>
 
-      <table id="mob-loot">
-        <tr>
-            <th style="text-align: right;">Loot:</th>
-        </tr>
-        <tr>
-            <td>
-                <input type="text" name="attr_loot1_chane" placeholder="chance" size="26" class="mob-input">
-                <input type="text" name="attr_loot1_name" placeholder="name" size="26" class="mob-input">
-                <input type="number" name="attr_loot1_value" placeholder="value" size="26" class="mob-input">
-            </td>
-            <td>
-                <input type="text" name="attr_loot2_chane" placeholder="chance" size="26" class="mob-input">
-                <input type="text" name="attr_loot2_name" placeholder="name" size="26" class="mob-input">
-                <input type="number" name="attr_loot2_value" placeholder="value" size="26" class="mob-input">
-            </td>
-            <td>
-                <input type="text" name="attr_loot3_chane" placeholder="chance" size="26" class="mob-input">
-                <input type="text" name="attr_loot3_name" placeholder="name" size="26" class="mob-input">
-                <input type="number" name="attr_loot3_value" placeholder="value" size="26" class="mob-input">
-            </td>
-            <td>
-                <input type="text" name="attr_loot4_chane" placeholder="chance" size="26" class="mob-input">
-                <input type="text" name="attr_loot4_name" placeholder="name" size="26" class="mob-input">
-                <input type="number" name="attr_loot4_value" placeholder="value" size="26" class="mob-input">
-            </td>
-        </tr>
-      </table>
+                <tr>
+                    <th style="text-align: right;">Level:</th>
+                    <td><input type="text" name="attr_mob_level" placeholder="mob level" size="26" class="mob-input"></td>
 
+                    <th style="text-align: right;">ID score:</th>
+                    <td><input type="text" name="attr_mob_id" placeholder="mob ID score" size="26" class="mob-input"></td>
+
+
+                </tr>
+
+                <tr>
+                    <th style="text-align: right;">Strength:</th>
+                    <td><input type="text" name="attr_mob_strength" placeholder="mob strength" size="26" class="mob-input"></td>
+                </tr>
+
+                <tr>
+                    <th style="text-align: right;">Dexterity:</th>
+                    <td><input type="text" name="attr_mob_dexterity" placeholder="mob dexterity" size="26" class="mob-input"></td>
+
+                    <th style="text-align: right;">Agility:</th>
+                    <td><input type="text" name="attr_mob_agility" placeholder="mob agility" size="26" class="mob-input"></td>
+                </tr>
+
+                <tr>
+                    <th style="text-align: right;">Inteligence:</th>
+                    <td><input type="text" name="attr_mob_inteligence" placeholder="mob inteligence" size="26" class="mob-input"></td>
+
+                    <th style="text-align: right;">Perception:</th>
+                    <td><input type="text" name="attr_mob_perception" placeholder="mob perception" size="26" class="mob-input"></td>
+                </tr>
+
+                <tr>
+                    <th style="text-align: right;">Mind:</th>
+                    <td><input type="text" name="attr_mob_mind" placeholder="mob mind" size="26" class="mob-input"></td>
+
+                    <th style="text-align: right;">Luck:</th>
+                    <td><input type="text" name="attr_mob_luck" placeholder="mob luck" size="26" class="mob-input"></td>
+
+
+                </tr>
+                
+                <tr>
+                    <th style="text-align: right;">Dodge:</th>
+                    <td>
+                        <input type="text" name="attr_mob_dodge" placeholder="mob dodge" size="26" class="mob-input">
+                        <button type="roll" value="/gmroll @{mob_dodge}" name="roll_mob_dodge"></button>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <th style="text-align: right;">hp:</th>
+                    <td><input type="text" name="attr_hp_max" placeholder="mob element" size="26" class="mob-input"></td>
+
+                    <th style="text-align: right;">defence(phys/magi):</th>
+                    <td><input type="text" name="attr_mob_defence" placeholder="mob element" size="26" class="mob-input"></td>
+                </tr>
+
+                <tr>
+                    <th style="text-align: right;">Action:</th>
+                    <td><input type="text" name="attr_mob_ac" placeholder="mob element" size="26" class="mob-input"></td>
+
+                    <th style="text-align: right;">Movement:</th>
+                    <td><input type="text" name="attr_mob_move" placeholder="mob element" size="26" class="mob-input"></td>
+                </tr>
+            </tr>
+        </table>
+
+        <table id="attacks">
+            <tr>
+                Attack (Hit/Dmg/Type/Range):
+                <input type="text" name="attr_mob_attack_hit_one" placeholder="hit" size="3" class="mob-input" style="width: 76px;">
+                <button type="roll" value="/gmroll @{mob_attack_hit_one}" name="roll_mob_attack_hit_one"></button>
+        
+                <input type="text" name="attr_mob_attack_dmg_one" placeholder="dmg" size="3" class="mob-input" style="width: 76px;">
+                <button type="roll" value="/gmroll @{mob_attack_dmg_one}" name="roll_mob_attack_dmg_one"></button>
+        
+                <input type="text" name="attr_mob_attack_type_one" placeholder="type" size="6" class="mob-input">
+                <input type="text" name="attr_mob_attack_range_one" placeholder="range" size="6" class="mob-input" style="width: 76px;">
+            </tr>
+            <br>
+            <tr>
+                Attack (Hit/Dmg/Type/Range):
+                <input type="text" name="attr_mob_attack_hit_two" placeholder="hit" size="3" class="mob-input" style="width: 76px;">
+                <button type="roll" value="/gmroll @{mob_attack_hit_two}" name="roll_mob_attack_hit_two"></button>
+        
+                <input type="text" name="attr_mob_attack_dmg_two" placeholder="dmg" size="3" class="mob-input" style="width: 76px;">
+                <button type="roll" value="/gmroll @{mob_attack_dmg_two}" name="roll_mob_attack_dmg_two"></button>
+        
+                <input type="text" name="attr_mob_attack_type_two" placeholder="type" size="6" class="mob-input">
+                <input type="text" name="attr_mob_attack_range_two" placeholder="range" size="6" class="mob-input" style="width: 76px;">
+            </tr>
+            <br>
+            <tr>
+                Attack (Hit/Dmg/Type/Range):
+                <input type="text" name="attr_mob_attack_hit_three" placeholder="hit" size="3" class="mob-input" style="width: 76px;">
+                <button type="roll" value="/gmroll @{mob_attack_hit_three}" name="roll_mob_attack_hit_three"></button>
+        
+                <input type="text" name="attr_mob_attack_dmg_three" placeholder="dmg" size="3" class="mob-input" style="width: 76px;">
+                <button type="roll" value="/gmroll @{mob_attack_dmg_three}" name="roll_mob_attack_dmg_three"></button>
+        
+                <input type="text" name="attr_mob_attack_type_three" placeholder="type" size="6" class="mob-input">
+                <input type="text" name="attr_mob_attack_range_three" placeholder="range" size="6" class="mob-input" style="width: 76px;">
+            </tr>
+        </table>
+
+        <table id="mob-skills">
+            <tr>
+                <th style="text-align: right;">Skills:</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="attr_skill1" placeholder="mob skill" size="26" class="mob-input">
+                    <textarea name="attr_skill1_desc" style="width:200px;height:128px;" class="mob-skill-input"></textarea>
+                </td>
+                <td>
+                    <input type="text" name="attr_skill2" placeholder="mob skill" size="26" class="mob-input">
+                    <textarea name="attr_skill2_desc" style="width:200px;height:128px;" class="mob-skill-input"></textarea>
+                </td>
+                <td>
+                    <input type="text" name="attr_skill3" placeholder="mob skill" size="26" class="mob-input">
+                    <textarea name="attr_skill3_desc" style="width:200px;height:128px;" class="mob-skill-input"></textarea>
+                </td>
+                <td>
+                    <input type="text" name="attr_skill4" placeholder="mob skill" size="26" class="mob-input">
+                    <textarea name="attr_skill4_desc" style="width:200px;height:128px;" class="mob-skill-input"></textarea>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <input type="text" name="attr_skill5" placeholder="mob skill" size="26" class="mob-input">
+                    <textarea name="attr_skill5_desc" style="width:200px;height:128px;" class="mob-skill-input"></textarea>
+                </td>
+                <td>
+                    <input type="text" name="attr_skill6" placeholder="mob skill" size="26" class="mob-input">
+                    <textarea name="attr_skill6_desc" style="width:200px;height:128px;" class="mob-skill-input"></textarea>
+                </td>
+                <td>
+                    <input type="text" name="attr_skill7" placeholder="mob skill" size="26" class="mob-input">
+                    <textarea name="attr_skill7_desc" style="width:200px;height:128px;" class="mob-skill-input"></textarea>
+                </td>
+                <td>
+                    <input type="text" name="attr_skill8" placeholder="mob skill" size="26" class="mob-input">
+                    <textarea name="attr_skill8_desc" style="width:200px;height:128px;" class="mob-skill-input"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <table id="mob-loot">
+            <tr>
+                <th style="text-align: right;">Loot:</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="attr_loot1_chane" placeholder="chance" size="26" class="mob-input">
+                    <input type="text" name="attr_loot1_name" placeholder="name" size="26" class="mob-input">
+                    <input type="text" name="attr_loot1_value" placeholder="value" size="26" class="mob-input">
+                </td>
+                <td>
+                    <input type="text" name="attr_loot2_chane" placeholder="chance" size="26" class="mob-input">
+                    <input type="text" name="attr_loot2_name" placeholder="name" size="26" class="mob-input">
+                    <input type="text" name="attr_loot2_value" placeholder="value" size="26" class="mob-input">
+                </td>
+                <td>
+                    <input type="text" name="attr_loot3_chane" placeholder="chance" size="26" class="mob-input">
+                    <input type="text" name="attr_loot3_name" placeholder="name" size="26" class="mob-input">
+                    <input type="text" name="attr_loot3_value" placeholder="value" size="26" class="mob-input">
+                </td>
+                <td>
+                    <input type="text" name="attr_loot4_chane" placeholder="chance" size="26" class="mob-input">
+                    <input type="text" name="attr_loot4_name" placeholder="name" size="26" class="mob-input">
+                    <input type="text" name="attr_loot4_value" placeholder="value" size="26" class="mob-input">
+                </td>
+            </tr>
+        </table>
     </div>
 </div>
 

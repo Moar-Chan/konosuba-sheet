@@ -2,7 +2,7 @@
 
 
 .journal-sheet-background {
-    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/journal-background-small.png');
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/V1/art/journal-background-small.png');
     background-repeat: no-repeat;
     height: 1320px;
     width: 900px;
@@ -10,7 +10,7 @@
 }
 
 .character-sheet-background {
-    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/character-background-small.png');
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/V1/art/character-background-small.png');
     background-repeat: no-repeat;
     height: 1320px;
     width: 900px;
@@ -305,4 +305,9 @@
 
 button[type=roll].sheet-blank-roll-button::before {
     content: '';
+}
+
+.mob-skill-input {
+    font-size: 12px;
+    line-height: 13px;
 }
