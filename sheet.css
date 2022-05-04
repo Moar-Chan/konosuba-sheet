@@ -2,37 +2,24 @@
 
 
 .journal-sheet-background {
-    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V2/journal-background-small.png');
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/journal-background-small.png');
+    background-repeat: no-repeat;
+    height: 1320px;
+    width: 900px;
+    background-size: 900px 1320px;
 }
 
 .character-sheet-background {
-    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V2/character-background-small.png');
-}
-
-.equipment-sheet-background {
-    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V2/equipment-background-small.png');
-}
-
-.skills-sheet-background {
-    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V2/skills-background-small.png');
-}
-
-.default-sheet-background {
-    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/art/V2/background-small.png');
-}
-
-.sheet-background {
+    background-image: url('https://raw.githubusercontent.com/Moar-Chan/konosuba-sheet/main/character-background-small.png');
     background-repeat: no-repeat;
-    height: 824px;
-    width: 888px;
-    background-size: 888px 824px;
+    height: 1320px;
+    width: 900px;
+    background-size: 900px 1320px;
 }
 
 /*Configure the tab buttons*/
 .charsheet .sheet-character,
 .charsheet .sheet-config,
-.charsheet .sheet-equipment,
-.charsheet .sheet-skills,
 .charsheet .sheet-journal {
     display: none;
 }
@@ -40,9 +27,7 @@
 /* show the selected tab */
 .charsheet .sheet-tabstoggle[value="character"] ~ div.sheet-character,
 .charsheet .sheet-tabstoggle[value="configuration"] ~ div.sheet-config,
-.charsheet .sheet-tabstoggle[value="journal"] ~ div.sheet-journal,
-.charsheet .sheet-tabstoggle[value="equipment"] ~ div.sheet-equipment,
-.charsheet .sheet-tabstoggle[value="skills"] ~ div.sheet-skills {
+.charsheet .sheet-tabstoggle[value="journal"] ~ div.sheet-journal {
     display: block;
 }
 
@@ -97,7 +82,7 @@
 }
 
 .big-input-numeral {
-    font-size:25px;
+    font-size:26px;
     font-family: 'Courier New', monospace;
     text-align: center;
 
@@ -117,7 +102,7 @@
 }
 
 .medium-input-text-block {
-    font-size:22px;
+    font-size:23px;
     font-family: 'Courier New', monospace;
     text-align: center;
 
@@ -148,7 +133,7 @@
 }
 
 .big-input-text-hand {
-    font-size:30px;
+    font-size:39px;
     font-family: 'Bilbo Swash Caps', cursive;
     text-align: center;
     font-weight: 600;
@@ -177,7 +162,7 @@
     font-family: 'Nunito', sans-serif;
     color: #313131;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
 
 
     margin-left: 6px;
@@ -196,7 +181,7 @@
     font-family: 'Nunito', sans-serif;
     color: whitesmoke;
     font-weight:600;
-    font-size: 26px;
+    font-size: 30px;
 
     margin-left: 4px;
 
@@ -307,79 +292,11 @@
 }
 
 .stat-column {
-    top: 539px;
-}
-
-.combat-column {
-    top: 115px;
-}
-
-.special-column {
-    top: 474px;
-    width: 68px;
+    top: 677px;
 }
 
 .column-space {
-    margin-top: 5px;
-}
-
-.skill-column {
-    margin-top: 4px;
-}
-
-.skill-names {
-    margin-top: 0px;
-    width: 176px;
-    border-style: none;
-    height: 30px;
-    margin-top: 3px;
-    font-size: 13px;
-}
-
-.skill-effect {
-    display: block;
-    width: 298px;
-    border-style: none;
-    height: 32px;
-    margin-top: -1px;
-    margin-bottom: 1px;
-    font-size: 10px;
-    margin-left: 0px;
-    line-height: 11.5px;
-}
-
-.ability-box {
-    width: 51px;
-    display: block;
-    border-style: none;
-    margin-left: 9px;
-}
-
-.inventory-input-name {
-    margin-top: 0px; 
-    width: 132px; 
-    border-style: none;
-    font-size: 13px;
-    margin-left: 4px;
-}
-
-.inventory-input-weight {
-    display: inline-block;
-    width: 38px;
-    border-style: none;
-    margin-left: -11px;
-    font-size: 15px;
-}
-
-.skill-level-input {
-    display: block;
-    width: 42px;
-    border-style: none;
-    margin-top: 3px;
-}
-
-.equipment-space {
-    margin-top: 35px;
+    margin-top: 16px;
 }
 
 .mob-input {
@@ -388,9 +305,4 @@
 
 button[type=roll].sheet-blank-roll-button::before {
     content: '';
-}
-
-.mob-skill-input {
-    font-size: 12px;
-    line-height: 13px;
 }
